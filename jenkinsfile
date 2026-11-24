@@ -12,11 +12,11 @@ pipeline {
                 deleteDir()
 
                 sh '''
-                    git clone https://github.com/Shameeem842100/shameeem.git
+                    git clone https://github.com/adhnan0088/adhnan.git
                     ls -la
                 '''
 
-                stash name: 'webpage', includes: 'shameeem/**'
+                stash name: 'webpage', includes: 'adhnan/**'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
 
                 sh '''
                     sudo rm -rf /var/www/html/*
-                    sudo cp -r shameeem/* /var/www/html/
+                    sudo cp -r adhnan/* /var/www/html/
                     ls -la /var/www/html/
                 '''
             }
