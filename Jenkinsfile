@@ -22,7 +22,7 @@ pipeline {
 
         stage('deploy') {
             agent {
-                label 'deploy-node'
+                label 'build-node'
             }
 
             steps {
