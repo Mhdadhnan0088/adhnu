@@ -16,7 +16,7 @@ pipeline {
                     ls -la
                 '''
 
-                stash name: 'webpage', includes: 'adhnan/**'
+                stash name: 'webpage', includes: 'adhnu/**'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
 
                 sh '''
                     sudo rm -rf /var/www/html/*
-                    sudo cp -r adhnan/* /var/www/html/
+                    sudo cp -r adhnu/* /var/www/html/
                     ls -la /var/www/html/
                 '''
             }
